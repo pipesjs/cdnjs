@@ -3,6 +3,7 @@
   "version": "0.8.3",
   "description": "Basic utilities for web streams",
   "main": "index.js",
+  "filename": "dist/pipes.core.min.js",
   "scripts": {
     "build": "babel src -d .",
     "bundle": "browserify --external web-streams-polyfill index.js > dist/pipes.core.js",
