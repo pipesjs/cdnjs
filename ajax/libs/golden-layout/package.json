@@ -1,13 +1,10 @@
 {
   "name": "golden-layout",
-  "version": "1.5.6",
+  "version": "1.5.8",
   "author": "deepstreamHub GmbH",
   "filename": "goldenlayout.min.js",
   "license": "MIT",
   "description": "A multi-screen javascript Layout manager",
-  "dependencies": {
-    "jquery": "*"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/deepstreamIO/golden-layout.git"

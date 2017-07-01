@@ -13,15 +13,10 @@
     "scroller",
     "ui"
   ],
-  "demo": "http://rocha.la/jQuery-slimScroll/",
   "homepage": "http://rocha.la/jQuery-slimScroll/",
-  "download": "http://rocha.la/jQuery-slimScroll/",
   "author": {
     "name": "Piotr Rochala",
     "url": "http://rocha.la/"
-  },
-  "dependencies": {
-    "jquery": ">= 1.7"
   },
   "licenses": [
     "MIT",

@@ -1,6 +1,6 @@
 {
   "name": "most",
-  "version": "1.1.1",
+  "version": "1.4.1",
   "filename": "most.min.js",
   "description": "Monadic streams for Ultra-high performance reactive programming",
   "repository": {
@@ -27,11 +27,6 @@
   ],
   "author": "brian@hovercraftstudios.com",
   "license": "MIT",
-  "dependencies": {
-    "@most/multicast": "^1.2.3",
-    "@most/prelude": "^1.4.0",
-    "symbol-observable": "^1.0.2"
-  },
   "npmName": "most",
   "npmFileMap": [
     {

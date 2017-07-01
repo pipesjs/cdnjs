@@ -15,13 +15,12 @@
   ],
   "name": "ramda",
   "description": "A practical functional library for JavaScript programmers.",
-  "version": "0.22.1",
+  "version": "0.24.1",
   "homepage": "https://www.github.com/ramda/ramda",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/ramda/ramda.git"
   },
-  "filename": "ramda.min.js",
-  "dependencies": {}
+  "filename": "ramda.min.js"
 }

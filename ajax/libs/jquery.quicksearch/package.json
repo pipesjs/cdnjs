@@ -2,7 +2,7 @@
   "name": "jquery.quicksearch",
   "filename": "jquery.quicksearch.min.js",
   "description": "A jQuery plugin for searching through tables, lists, etc quickly",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "homepage": "https://deuxhuithuit.github.io/quicksearch/",
   "authors": [
     {
@@ -18,9 +18,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/DeuxHuitHuit/quicksearch.git"
-  },
-  "dependencies": {
-    "jquery": ">=1.8"
   },
   "keywords": [
     "jquery-plugin",

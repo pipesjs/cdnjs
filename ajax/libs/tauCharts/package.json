@@ -1,6 +1,6 @@
 {
   "name": "tauCharts",
-  "version": "0.9.4",
+  "version": "1.2.1",
   "filename": "tauCharts.min.js",
   "description": "D3 based data-focused charting library",
   "author": {
@@ -11,11 +11,6 @@
     "charts"
   ],
   "license": "Apache-2.0",
-  "dependencies": {
-    "d3": "^3.5.5",
-    "topojson": "1.6.19",
-    "underscore": "~1.8.3"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/TargetProcess/tauCharts.git"

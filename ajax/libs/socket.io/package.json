@@ -1,9 +1,9 @@
 {
   "name": "socket.io",
-  "filename": "socket.io.min.js",
-  "version": "1.7.1",
+  "filename": "socket.io.js",
+  "version": "2.0.2",
   "description": "node.js realtime framework server",
-  "homepage": "http://socket.io",
+  "homepage": "https://socket.io",
   "keywords": [
     "websockets",
     "node",

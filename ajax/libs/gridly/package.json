@@ -1,6 +1,6 @@
 {
   "name": "gridly",
-  "version": "1.4.5",
+  "version": "1.4.10",
   "description": "The minimal (~157 bytes) grid system for modern browsers.",
   "repository": {
     "type": "git",
@@ -15,9 +15,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
-  "dependencies": {
-    "uglifycss": "^0.0.18"
-  },
   "npmName": "gridly",
   "npmFileMap": [
     {

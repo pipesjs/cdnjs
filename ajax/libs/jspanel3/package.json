@@ -1,12 +1,8 @@
 {
   "name": "jspanel3",
   "filename": "jquery.jspanel.min.js",
-  "version": "3.5.0",
+  "version": "3.9.0",
   "description": "A jQuery Plugin to create highly configurable multifunctional floating panels",
-  "dependencies": {
-    "jquery": ">=2.x",
-    "jquery-ui": ">=1.9"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Flyer53/jsPanel3.git"

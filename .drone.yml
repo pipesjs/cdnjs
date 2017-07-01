@@ -1,14 +1,9 @@
 pipeline:
-  cache-restore:
-    image: peterdavehello/cdnjs-drone-ci
-    action: restore-cache
-    when:
-      event: [ push, pull_request ]
   clone:
-    image: peterdavehello/cdnjs-drone-clone:latest
-    sparseCheckout: tools/sparse-checkout.template
-  test:
     image: peterdavehello/cdnjs-drone-ci
-    action: test
+    sparseCheckout: tools/sparse-checkout.template
+  bot-review:
+    image: peterdavehello/drone-github-status-report-bot:latest
     when:
-      event: [ push, pull_request ]
+      event: pull_request
+      status: [ success, failure ]

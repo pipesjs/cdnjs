@@ -1,6 +1,6 @@
 {
   "name": "geojson2svg",
-  "version": "1.0.5",
+  "version": "1.2.1",
   "description": "Converts geojson to svg/path string given svg viewport size and maps extent.",
   "keywords": [
     "maps",
@@ -11,12 +11,7 @@
     "type": "git",
     "url": "https://github.com/gagan-bansal/geojson2svg"
   },
-  "auther": "Gagan Bansal",
   "license": "MIT",
-  "dependencies": {
-    "multigeojson": "~0.0.1",
-    "xtend": "~4.0.0"
-  },
   "npmName": "geojson2svg",
   "npmFileMap": [
     {

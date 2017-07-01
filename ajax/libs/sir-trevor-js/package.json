@@ -1,7 +1,7 @@
 {
   "name": "sir-trevor-js",
   "filename": "sir-trevor.min.js",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "description": "Rich content editing entirely re-imagined for the web",
   "homepage": "https://madebymany.github.io/sir-trevor-js/",
   "repository": {
@@ -13,10 +13,6 @@
     "rich content editor",
     "Sir Trevor"
   ],
-  "dependencies": {
-    "es5-shim": "^4.0.3",
-    "svg4everybody": "^2.0.3"
-  },
   "license": "MIT",
   "autoupdate": {
     "source": "git",

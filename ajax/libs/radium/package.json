@@ -1,6 +1,6 @@
 {
   "name": "radium",
-  "version": "0.18.1",
+  "version": "0.19.1",
   "description": "A set of tools to manage inline styles on React elements",
   "filename": "radium.min.js",
   "repository": {
@@ -8,12 +8,6 @@
     "url": "https://github.com/formidablelabs/radium.git"
   },
   "homepage": "http://stack.formidable.com/radium/",
-  "dependencies": {
-    "array-find": "^1.0.0",
-    "exenv": "^1.2.0",
-    "inline-style-prefixer": "^1.0.3",
-    "rimraf": "^2.4.0"
-  },
   "keywords": [
     "react",
     "style",

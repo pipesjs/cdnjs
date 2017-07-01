@@ -21,15 +21,16 @@ Here is an example of `.git/info/sparse-checkout`:
 /build
 /documents
 /test
+/spec
 /tools
-/MIT-LICENSE
+/LICENSE
 /hooks
-/MAINTAINERS
 /*.yml
 /*.md
 /*.json
 /*.sh
 /*.js
+/.jscsrc
 /ajax/libs/jquery/*
 #/ajax/libs/*/package.json // for tools/createSparseCheckoutConfig.js
 ```

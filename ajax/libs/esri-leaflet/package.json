@@ -2,14 +2,8 @@
   "name": "esri-leaflet",
   "description": "Leaflet plugins for consuming ArcGIS Online and ArcGIS Server services.",
   "filename": "esri-leaflet.js",
-  "version": "2.0.6",
+  "version": "2.0.8",
   "author": "Patrick Arlt <parlt@esri.com> (http://patrickarlt.com)",
-  "dependencies": {
-    "arcgis-to-geojson-utils": "^1.0.1",
-    "leaflet": "^1.0.0-rc.2",
-    "leaflet-virtual-grid": "^1.0.3",
-    "tiny-binary-search": "^1.0.2"
-  },
   "homepage": "http://esri.github.io/esri-leaflet/",
   "keywords": [
     "arcgis",
@@ -20,7 +14,6 @@
     "mapping"
   ],
   "license": "Apache-2.0",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "git@github.com:Esri/esri-leaflet.git"

@@ -1,6 +1,6 @@
 {
   "name": "jQuery.my",
-  "version": "1.2.8",
+  "version": "1.2.10",
   "description": "A lightweight jQuery plugin for complex two-way data binding in real time.",
   "homepage": "http://jquerymy.com/",
   "author": {
@@ -21,10 +21,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ermouth/jQuery.my.git"
-  },
-  "dependencies": {
-    "jquery": "~1.11",
-    "sugar": "~1.4"
   },
   "license": "MIT",
   "npmName": "jquerymy",

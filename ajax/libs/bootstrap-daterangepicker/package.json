@@ -1,9 +1,8 @@
 {
   "name": "bootstrap-daterangepicker",
   "filename": "daterangepicker.min.js",
-  "version": "2.1.24",
+  "version": "2.1.25",
   "description": "Date range picker component for Bootstrap",
-  "style": "daterangepicker-bs3.css",
   "repository": {
     "type": "git",
     "url": "https://github.com/dangrossman/bootstrap-daterangepicker.git"
@@ -14,10 +13,6 @@
     "url": "http://www.dangrossman.info"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": "^1.10",
-    "moment": "^2.9.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dangrossman/bootstrap-daterangepicker.git",

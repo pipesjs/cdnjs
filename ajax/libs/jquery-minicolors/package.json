@@ -1,7 +1,7 @@
 {
   "name": "jquery-minicolors",
   "filename": "jquery.minicolors.min.js",
-  "version": "2.2.4",
+  "version": "2.2.6",
   "homepage": "http://labs.abeautifulsite.net/jquery-minicolors/",
   "author": "Cory LaViska",
   "description": "jQuery MiniColors Plugin",
@@ -10,9 +10,6 @@
     "colorpicker"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">= 1.7.x"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/claviska/jquery-minicolors.git"

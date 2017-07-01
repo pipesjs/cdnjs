@@ -1,7 +1,7 @@
 {
   "name": "recompose",
   "filename": "Recompose.min.js",
-  "version": "0.20.2",
+  "version": "0.23.4",
   "author": {
     "name": "Andrew Clark",
     "email": "acdlite@me.com"
@@ -21,11 +21,6 @@
     "utilities",
     "composition"
   ],
-  "dependencies": {
-    "fbjs": "^0.8.1",
-    "hoist-non-react-statics": "^1.0.0",
-    "lodash": "^4.3.0"
-  },
   "npmName": "recompose",
   "npmFileMap": [
     {

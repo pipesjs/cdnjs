@@ -1,7 +1,7 @@
 {
   "name": "fetch-jsonp",
   "filename": "fetch-jsonp.min.js",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "Fetch JSONP like a boss using Fetch API",
   "keywords": [
     "fetch",
@@ -9,9 +9,6 @@
     "github fetch",
     "ajax"
   ],
-  "dependencies": {
-    "es6-promise": "^2.3.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/camsong/fetch-jsonp.git"

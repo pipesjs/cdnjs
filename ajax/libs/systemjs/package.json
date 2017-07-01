@@ -1,6 +1,6 @@
 {
   "name": "systemjs",
-  "version": "0.19.41",
+  "version": "0.20.13",
   "description": "Universal dynamic module loader",
   "repository": {
     "type": "git",
@@ -8,10 +8,6 @@
   },
   "author": "Guy Bedford",
   "license": "MIT",
-  "dependencies": {
-    "es6-module-loader": "^0.17.3",
-    "when": "^3.7.2"
-  },
   "npmName": "systemjs",
   "npmFileMap": [
     {

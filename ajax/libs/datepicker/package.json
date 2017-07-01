@@ -1,7 +1,7 @@
 {
   "name": "datepicker",
   "description": "A simple jQuery datepicker plugin.",
-  "version": "0.4.0",
+  "version": "0.5.3",
   "filename": "datepicker.min.js",
   "license": "MIT",
   "repository": {
@@ -26,9 +26,6 @@
     "web",
     "development"
   ],
-  "dependencies": {
-    "jquery": ">= 1.9.1"
-  },
   "npmName": "@fengyuanchen/datepicker",
   "npmFileMap": [
     {

@@ -1,6 +1,6 @@
 {
   "name": "places.js",
-  "version": "1.4.7",
+  "version": "1.4.14",
   "filename": "places.min.js",
   "description": "🌐 The easiest way to add fast geo search to your website.",
   "author": "Algolia (https://www.algolia.com)",
@@ -10,11 +10,6 @@
     "url": "https://github.com/algolia/places"
   },
   "license": "MIT",
-  "dependencies": {
-    "algoliasearch": "^3.14.6",
-    "autocomplete.js": "^0.20.0",
-    "events": "^1.1.0"
-  },
   "npmName": "places.js",
   "npmFileMap": [
     {

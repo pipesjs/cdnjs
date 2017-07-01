@@ -1,6 +1,6 @@
 {
   "name": "lovefield",
-  "version": "2.1.10",
+  "version": "2.1.12",
   "filename": "lovefield.min.js",
   "description": "Lovefield - A relational database for web apps",
   "keywords": [
@@ -10,10 +10,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/google/lovefield.git"
-  },
-  "dependencies": {
-    "js-yaml": "~3.1.0",
-    "nopt": "~2.2.1"
   },
   "npmName": "lovefield",
   "npmFileMap": [

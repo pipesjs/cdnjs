@@ -11,26 +11,20 @@
     "equalize",
     "columns"
   ],
-  "version": "0.7.0",
+  "version": "0.7.2",
   "author": {
     "name": "liabru",
     "url": "http://brm.io"
   },
-  "demo": "http://brm.io/jquery-match-height-demo/",
   "homepage": "http://brm.io/jquery-match-height/",
-  "docs": "http://brm.io/jquery-match-height/",
-  "download": "https://github.com/liabru/jquery-match-height",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/liabru/jquery-match-height.git",
     "fileMap": [
       {
-        "basePath": "",
+        "basePath": "dist",
         "files": [
-          "jquery.matchHeight*.js"
+          "**/*"
         ]
       }
     ]

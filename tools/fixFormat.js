@@ -5,10 +5,11 @@ var fs = require('fs'),
   glob = require('glob'),
   GitUrlParse = require('git-url-parse'),
   _ = require('lodash'),
-  packages = glob.sync('./ajax/libs/*/package.json');
+  packages = glob.sync('./ajax/libs/*/package.json'),
   colors = require('colors'),
-  licenses = JSON.parse(fs.readFileSync('tools/license-list.json', 'utf8'));
-  isThere = require('is-there');
+  licenses = JSON.parse(fs.readFileSync('tools/license-list.json', 'utf8')),
+  isThere = require('is-there'),
+  recognizedKeys = require('../test/recognizedFields.js');
 
 function fixFormat() {
   /*
@@ -21,17 +22,18 @@ function fixFormat() {
    *
    */
 
-  async.each(packages, function(item, callback) {
+  async.each(packages, function (item, callback) {
     var pkg = JSON.parse(fs.readFileSync(item, 'utf8'));
 
-    deletePackageParts(pkg);
     deleteHomepage(pkg);
     fixAuthors(pkg);
-    fixLicense(pkg, item);
+    fixLicense(pkg);
     setNpmBasePaths(pkg);
     filterKeywords(pkg);
     fixAutoupdate(pkg);
-    fixFilenameField(pkg, item);
+    fixFilenameField(pkg);
+    removeKeysWithLeadingUnderscores(pkg);
+    removeUnrecognizedFields(pkg);
 
     const pkgJson = JSON.stringify(pkg, null, 2) + '\n';
 
@@ -43,45 +45,13 @@ function fixFormat() {
     callback();
   });
 
-  function deletePackageParts(pkg) {
-    delete pkg.bin;
-    delete pkg.jshintConfig;
-    delete pkg.eslintConfig;
-    delete pkg.maintainers;
-    delete pkg.styles;
-    delete pkg.requiredFiles;
-    delete pkg.install;
-    delete pkg.typescript;
-    delete pkg.browserify;
-    delete pkg.browser;
-    delete pkg.jam;
-    delete pkg.jest;
-    delete pkg.scripts;
-    delete pkg.devDependencies;
-    delete pkg.main;
-    delete pkg.peerDependencies;
-    delete pkg.contributors;
-    delete pkg.bugs;
-    delete pkg.gitHEAD;
-    delete pkg.gitHead;
-    delete pkg.spm;
-    delete pkg.dist;
-    delete pkg.issues;
-    delete pkg.files;
-    delete pkg.ignore;
-    delete pkg.engines;
-    delete pkg.engine;
-    delete pkg.directories;
-    delete pkg.repositories;
-  }
-
   function deleteHomepage(pkg) {
     if ((pkg.repository != undefined) && (pkg.repository.type == 'git')) {
       if (pkg.homepage != undefined) {
         var repoUrlHttps = GitUrlParse(pkg.repository.url).toString('https');
         if (pkg.homepage == repoUrlHttps ||
             pkg.homepage == repoUrlHttps + '#readme' ||
-            pkg.homepage == repoUrlHttps + '.git' ) {
+            pkg.homepage == repoUrlHttps + '.git') {
           delete pkg.homepage;
         }
       }
@@ -105,7 +75,7 @@ function fixFormat() {
     }
   }
 
-  function fixLicense(pkg, item) {
+  function fixLicense(pkg) {
     if ((pkg.licenses != undefined) && !Array.isArray(pkg.licenses)) {
       pkg.license = pkg.licenses;
       delete pkg.licenses;
@@ -151,7 +121,7 @@ function fixFormat() {
       for (var i in pkg.npmFileMap) {
         var npmbasePath = pkg.npmFileMap[i].basePath;
         if (npmbasePath && npmbasePath.length != 0 && ((typeof npmbasePath) == 'string')) {
-          npmbasePath = (npmbasePath).replace(/^\/+|\/+$/g , '');
+          npmbasePath = (npmbasePath).replace(/^\/+|\/+$/g, '');
           pkg.npmFileMap[i].basePath = npmbasePath;
         }
       }
@@ -169,14 +139,15 @@ function fixFormat() {
 
   function fixAutoupdate(pkg) {
     if (pkg.autoupdate) {
-      var basePath = pkg.autoupdate.basePath || ""
+      var basePath = pkg.autoupdate.basePath || '';
       if (basePath || pkg.autoupdate.files) {
         if (basePath && basePath.length !== 0) {
-          basePath = basePath.replace(/^\/+|\/+$/g , "");
+          basePath = basePath.replace(/^\/+|\/+$/g, '');
         }
+
         pkg.autoupdate.fileMap = [
           {
-              basePath: basePath || "",
+              basePath: basePath || '',
               files: pkg.autoupdate.files
           }
         ];
@@ -191,7 +162,7 @@ function fixFormat() {
   }
 
   function adapt(licenseName) {
-    switch(licenseName) {
+    switch (licenseName) {
       case 'GPLv2':
       case 'GNU GPL v2':
         return 'GPL-2.0';
@@ -209,7 +180,11 @@ function fixFormat() {
     }
   }
 
-  function fixFilenameField(pkg, item) {
+  function fixFilenameField(pkg) {
+    if (!pkg.filename) {
+      return;
+    }
+
     var orig = pkg.filename.split('.');
     var min = '';
     if (orig[orig.length - 2] !== 'min') {
@@ -219,11 +194,30 @@ function fixFormat() {
       temp.push(ext);
       min = temp.join('.');
     }
-    pkg.filename = pkg.filename.replace(/^\/+/g , "");
+
+    pkg.filename = pkg.filename.replace(/^\/+/g, '');
     if (min !== '' && isThere('./ajax/libs/' + pkg.name + '/' + pkg.version + '/' + min)) {
       pkg.filename = min;
     }
   };
+
+  function removeKeysWithLeadingUnderscores(pkg) {
+    Object.keys(pkg).forEach(function (key) {
+      if (key[0] === '_') {
+        delete pkg[key];
+      }
+    });
+  }
+
+  function removeUnrecognizedFields(pkg) {
+    Object.keys(pkg).forEach(function(key) {
+      if (!recognizedKeys[key]) {
+        delete pkg[key]
+
+        console.log(('removed unsupported key from ' + pkg.name + ': ' + key).green);
+      }
+    });
+  }
 };
 
 // don't execute this function if we are just running tests

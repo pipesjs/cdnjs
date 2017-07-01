@@ -10,15 +10,12 @@
     "input"
   ],
   "homepage": "https://yaireo.github.io/validator/",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": {
     "name": "Yair Even Or",
     "url": "http://dropthebit.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "jquery": ">=1.5"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/yairEO/validator.git"

@@ -10,9 +10,6 @@
     "url": "http://wenzhixin.net.cn/"
   },
   "license": "MIT License",
-  "dependencies": {
-    "jquery": ">=1.7"
-  },
   "keywords": [
     "multiple.select",
     "select.list",
@@ -20,8 +17,6 @@
     "checkbox"
   ],
   "homepage": "http://wenzhixin.net.cn/p/multiple-select/",
-  "demo": "http://wenzhixin.net.cn/p/multiple-select/#examples",
-  "docs": "http://wenzhixin.net.cn/p/multiple-select/#documentation",
   "repository": {
     "type": "git",
     "url": "git://github.com/wenzhixin/multiple-select.git"

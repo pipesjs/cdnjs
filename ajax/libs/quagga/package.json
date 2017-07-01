@@ -1,6 +1,6 @@
 {
   "name": "quagga",
-  "version": "0.11.5",
+  "version": "0.12.0",
   "filename": "quagga.min.js",
   "description": "An advanced barcode-scanner written in JavaScript",
   "repository": {
@@ -25,13 +25,6 @@
     "email": "ch.oberhofer@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {
-    "get-pixels": "^3.2.3",
-    "gl-matrix": "^2.3.1",
-    "lodash": "^3.10.1",
-    "ndarray": "^1.0.18",
-    "ndarray-linear-interpolate": "^1.0.0"
-  },
   "npmName": "quagga",
   "npmFileMap": [
     {

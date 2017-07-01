@@ -2,7 +2,7 @@
   "name": "angular-materialize",
   "description": "Angularjs directives for Materialize CSS Framework",
   "author": "@krescruz",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,9 +14,6 @@
     "material",
     "framework"
   ],
-  "dependencies": {
-    "node-materialize": "https://github.com/ryepdx/node-materialize/tarball/master"
-  },
   "npmName": "angular-materialize",
   "npmFileMap": [
     {

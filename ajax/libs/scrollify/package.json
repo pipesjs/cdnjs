@@ -7,17 +7,12 @@
     "scroll",
     "snap"
   ],
-  "version": "1.0.8",
+  "version": "1.0.14",
   "author": {
     "name": "Luke Haas",
     "url": "http://lukehaas.me"
   },
   "homepage": "http://projects.lukehaas.me/scrollify",
-  "docs": "https://github.com/lukehaas/Scrollify",
-  "download": "https://github.com/lukehaas/Scrollify",
-  "dependencies": {
-    "jquery": ">=1.6"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/lukehaas/Scrollify.git",

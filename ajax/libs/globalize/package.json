@@ -1,6 +1,6 @@
 {
   "name": "globalize",
-  "version": "1.1.2",
+  "version": "1.2.3",
   "description": "A JavaScript library for internationalization and localization that leverage the official Unicode CLDR JSON data.",
   "filename": "globalize.min.js",
   "keywords": [
@@ -30,9 +30,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/jquery/globalize.git"
-  },
-  "dependencies": {
-    "cldrjs": "0.3.4"
   },
   "npmName": "globalize",
   "npmFileMap": [

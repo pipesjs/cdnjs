@@ -1,6 +1,6 @@
 {
   "name": "leaflet-routing-machine",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "description": "Routing for Leaflet",
   "filename": "leaflet-routing-machine.min.js",
   "repository": {
@@ -18,11 +18,6 @@
   },
   "license": "ISC",
   "homepage": "http://www.liedman.net/leaflet-routing-machine/",
-  "dependencies": {
-    "corslite": "0.0.6",
-    "leaflet": "^0.7.2",
-    "polyline": "0.0.3"
-  },
   "npmName": "leaflet-routing-machine",
   "npmFileMap": [
     {

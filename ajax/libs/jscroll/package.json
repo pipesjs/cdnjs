@@ -1,7 +1,7 @@
 {
   "name": "jscroll",
   "filename": "jquery.jscroll.min.js",
-  "version": "2.3.5",
+  "version": "2.3.9",
   "description": "jQuery plugin for infinite scrolling / auto-paging.",
   "repository": {
     "type": "git",
@@ -24,9 +24,6 @@
   },
   "license": "MIT",
   "homepage": "http://jscroll.com",
-  "dependencies": {
-    "jquery": "^1.7.4"
-  },
   "npmName": "jscroll",
   "npmFileMap": [
     {

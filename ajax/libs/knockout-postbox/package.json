@@ -1,10 +1,7 @@
 {
   "name": "knockout-postbox",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "filename": "knockout-postbox.min.js",
-  "dependencies": {
-    "knockout": ">= 2.0"
-  },
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/rniemeyer/knockout-postbox.git",

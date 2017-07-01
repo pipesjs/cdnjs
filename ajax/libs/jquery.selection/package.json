@@ -3,7 +3,6 @@
   "filename": "jquery.selection.min.js",
   "version": "1.0.1",
   "description": "selection text/caret operation - jQuery pulgin | 選択範囲のテキスト操作 / キャレット操作 ",
-  "docs": "http://madapaja.github.com/jquery.selection/",
   "keywords": [
     "selection",
     "caret"
@@ -11,9 +10,6 @@
   "author": {
     "name": "Koji Iwasaki",
     "url": "http://blog.madapaja.net"
-  },
-  "dependencies": {
-    "jquery": ">=1.7.0"
   },
   "repository": {
     "type": "git",

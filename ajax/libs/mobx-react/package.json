@@ -1,7 +1,7 @@
 {
   "name": "mobx-react",
   "filename": "index.min.js",
-  "version": "4.0.3",
+  "version": "4.2.1",
   "description": "React bindings for MobX. Create fully reactive components.",
   "repository": {
     "type": "git",
@@ -10,9 +10,6 @@
   "author": "Michel Weststrate",
   "license": "MIT",
   "homepage": "https://mobxjs.github.io/mobx",
-  "dependencies": {
-    "hoist-non-react-statics": "^1.2.0"
-  },
   "keywords": [
     "mobx",
     "mobservable",

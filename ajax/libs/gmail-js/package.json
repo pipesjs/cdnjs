@@ -1,7 +1,7 @@
 {
   "name": "gmail-js",
   "filename": "gmail.min.js",
-  "version": "0.6.4",
+  "version": "0.6.10",
   "description": "JavaScript API for Gmail (useful for chrome extensions)",
   "repository": {
     "type": "git",
@@ -14,9 +14,6 @@
     "gmail extension",
     "gmail chrome extension"
   ],
-  "dependencies": {
-    "jquery": "^1.10.2"
-  },
   "author": "Kartik Talwar",
   "license": "MIT",
   "npmName": "gmail-js",

@@ -1,7 +1,7 @@
 {
   "name": "react-bootstrap-table",
   "filename": "react-bootstrap-table.min.js",
-  "version": "2.6.0",
+  "version": "3.3.8",
   "description": "It's a react table for bootstrap",
   "repository": {
     "type": "git",
@@ -17,10 +17,6 @@
   "author": "AllenFang",
   "license": "MIT",
   "homepage": "https://allenfang.github.io/react-bootstrap-table/index.html",
-  "dependencies": {
-    "classnames": "^2.1.2",
-    "react-toastr": "^2.3.1"
-  },
   "npmName": "react-bootstrap-table",
   "npmFileMap": [
     {

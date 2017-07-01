@@ -1,6 +1,6 @@
 {
   "name": "ekko-lightbox",
-  "version": "5.0.0",
+  "version": "5.1.1",
   "filename": "ekko-lightbox.min.js",
   "description": "A lightbox gallery plugin for Bootstrap 3 based on the modal plugin",
   "keywords": [
@@ -11,8 +11,6 @@
     "modal"
   ],
   "author": "ashleydw <hello@ashleyd.ws>",
-  "style": "dist/ekko-lightbox.css",
-  "less": "ekko-lightbox.less",
   "repository": {
     "type": "git",
     "url": "https://github.com/ashleydw/lightbox.git"

@@ -1,6 +1,6 @@
 {
   "name": "typeit",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "filename": "typeit.min.js",
   "license": "General Public License",
   "author": "Alex MacArthur <alex@macarthur.me>",
@@ -16,9 +16,6 @@
     "typewriter",
     "type effect"
   ],
-  "dependencies": {
-    "jquery": "^1.11.3"
-  },
   "npmName": "typeit",
   "npmFileMap": [
     {

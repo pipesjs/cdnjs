@@ -5,24 +5,27 @@
  *
  */
 
-var fs = require("fs"),
-  async = require("async"),
-  glob = require("glob"),
-  colors = require("colors"),
-  basePath = "/ajax/libs/",
+var fs = require('fs'),
+  async = require('async'),
+  glob = require('glob'),
+  colors = require('colors'),
+  basePath = '/ajax/libs/',
   result = fs.readFileSync('.git/info/sparse-checkout'),
-  packages = glob.sync("./ajax/libs/*/package.json");
+  packages = glob.sync('./ajax/libs/*/package.json');
 
 colors.setTheme({
   success: 'green'
 });
 
-async.each(packages, function(item, callback) {
+args = process.argv.slice(2);
+
+async.each(packages, function (item, callback) {
   var content = JSON.parse(fs.readFileSync(item, 'utf8')),
-    temp = '/ajax/libs/' + content.name + '/' + content.version + '/' + content.filename + '\n';
+  temp = '/ajax/libs/' + content.name + '/' + content.version + '/' + content.filename + '\n';
   result += temp;
   callback();
-}, function(){
+}, function () {
+
   fs.writeFileSync('.git/info/sparse-checkout', result, 'utf8');
   console.log('Sparse-checkout config for the latest version of libs created!'.success);
 });

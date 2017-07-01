@@ -1,6 +1,6 @@
 {
   "name": "classlist",
-  "version": "2014.01.31",
+  "version": "1.1.20170427",
   "filename": "classList.min.js",
   "description": "Cross-browser full element.classList implementation.",
   "author": {
@@ -16,5 +16,18 @@
     "classlist",
     "polyfill"
   ],
-  "license": "Unlicense"
+  "license": "Unlicense",
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/eligrey/classList.js.git",
+    "fileMap": [
+      {
+        "basePath": "",
+        "files": [
+          "classList.min.js",
+          "classList.js"
+        ]
+      }
+    ]
+  }
 }
