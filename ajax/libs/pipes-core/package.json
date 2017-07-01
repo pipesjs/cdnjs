@@ -1,6 +1,5 @@
 {
   "name": "pipes-core",
-  "version": "0.8.4",
   "description": "Basic utilities for web streams",
   "filename": "pipes.core.min.js",
   "repository": {
