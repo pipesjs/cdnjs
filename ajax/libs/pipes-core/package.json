@@ -2,11 +2,20 @@
   "name": "pipes-core",
   "version": "0.8.4",
   "description": "Basic utilities for web streams",
-  "filename": "dist/pipes.core.min.js",
+  "filename": "pipes.core.min.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pipesjs/core.git"
   },
+  "npmName": "@pipes/core",
+  "npmFileMap": [
+    {
+      "basePath": "dist",
+      "files": [
+        "pipes.core.!(es6)*"
+      ]
+    }
+  ],
   "keywords": [
     "streams",
     "pipesjs",
@@ -14,5 +23,5 @@
   ],
   "author": "Diwank Singh <diwank.singh@gmail.com>",
   "license": "MIT",
-  "homepage": "https://pipes.js.org/core"
+  "homepage": "http://pipes.js.org/core"
 }
